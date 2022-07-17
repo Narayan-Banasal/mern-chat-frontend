@@ -42,7 +42,7 @@ function Sidebar() {
     });
 
     function getRooms() {
-        fetch(`${process.env.REACT_APP_BACKEND_URL}/rooms`)
+        fetch(`https://mern-chat-backend-v1.herokuapp.com`)
             .then((res) => res.json())
             .then((data) => setRooms(data));
     }
