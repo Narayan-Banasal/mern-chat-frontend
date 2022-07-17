@@ -42,7 +42,7 @@ function Sidebar() {
     });
 
     function getRooms() {
-        fetch("http://192.168.1.38:5001/rooms")
+        fetch(`${process.env.REACT_APP_BACKEND_URL}/rooms`)
             .then((res) => res.json())
             .then((data) => setRooms(data));
     }

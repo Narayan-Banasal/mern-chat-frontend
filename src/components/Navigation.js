@@ -36,7 +36,6 @@ function Navigation() {
                             <NavDropdown
                                 title={
                                     <>
-                                        {console.log(user.picture)}
                                         <img src={user.picture} style={{ width: 30, height: 30, marginRight: 10, objectFit: "cover", borderRadius: "50%" }} />
                                         {user.name}
                                     </>
