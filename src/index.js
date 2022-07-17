@@ -8,7 +8,7 @@ import { Provider } from "react-redux";
 import { PersistGate } from "redux-persist/integration/react";
 import persistStore from "redux-persist/es/persistStore";
 import store from "./store";
-
+process.env.REACT_APP_BACKEND_URL='https://mern-chat-backend-v1.herokuapp.com';
 const persistedStore = persistStore(store);
 
 ReactDOM.render(
