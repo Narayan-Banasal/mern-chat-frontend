@@ -13,6 +13,7 @@ function Login() {
     const [loginUser, { isLoading, error }] = useLoginUserMutation();
     function handleLogin(e) {
         e.preventDefault();
+        console.log(process.env.REACT_APP_BACKEND_URL);
         // login logic
         loginUser({ email, password }).then(({ data }) => {
             if (data) {
